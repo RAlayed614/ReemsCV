@@ -1,0 +1,106 @@
+/*Arabic font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@600&display=swap');
+
+/*English font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+#Arabic{
+    font-family: "Noto Nastaliq Urdu";
+}
+
+body {
+    background-color: #5f5f00;
+    color: #aaaa68;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #ffffac;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #aaaa68;
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: #ffffca;
+}
+
+img {
+    width: 100%;
+}
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.navbar {
+    background-color: #666600;
+}
+.navbar .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffca;
+}
+
+.navbar .nav-link:hover{
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar{
+        min-height: 100vh;
+        width: 240px;
+        background: linear-gradient(rgba(102, 102, 0, 0.4),rgba(102, 102, 0, 0.8)) , url(../img/bi.png);
+        background-position: center;
+    }
+
+    .navbar-brand img{
+        border: 6px solid rgba(255, 255, 202, 0.4);
+
+    }
+
+    #content-wrapper{
+        padding-left: 240px;
+    }
+
+}
+
+.press {
+    position: relative;
+}
+
+.press::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffca;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+.press:hover::after{
+    width: 100%;
+}
+
+
+/*:root {
+    --color-body: #aaaa68;
+    --color-heading: #ffffac;
+    --color-base: #666600;
+    --color-base2: #5f5f00;
+    --color-brand: #ffffca;
+    --color-brand2: #ffff84;
+    --sidbar-width: #240px;
+    --font-base: "Roboto Mono";
+}*/
