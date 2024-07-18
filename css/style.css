@@ -89,10 +89,10 @@ img {
     top: 110%;
     transition: all 0.4s;
 }
+
 .press:hover::after{
     width: 100%;
 }
-
 
 /*:root {
     --color-body: #aaaa68;
