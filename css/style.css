@@ -4,7 +4,7 @@
 /*English font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-#Arabic{
+#Arabic {
     font-family: "Noto Nastaliq Urdu";
 }
 
@@ -14,11 +14,16 @@ body {
     font-family: "Roboto Mono", sans-serif;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     color: #ffffac;
     font-weight: 600;
 }
-h4, h5, h6{
+
+h4,
+h5,
+h6 {
     color: #ffffac;
 }
 
@@ -28,7 +33,7 @@ a {
     transition: all 0.4s ease;
 }
 
-a:hover{
+a:hover {
     color: #ffffca;
 }
 
@@ -36,7 +41,7 @@ img {
     width: 100%;
 }
 
-.full-height{
+.full-height {
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -50,6 +55,7 @@ img {
 .text-brand {
     color: #ffff84;
 }
+
 .bg-base {
     background-color: #666600;
 }
@@ -57,6 +63,7 @@ img {
 .shadow-effect {
     transition: all 0.5s;
 }
+
 .shadow-effect:hover {
     box-shadow: -6px 6px 0 0 #ffff84;
 }
@@ -75,40 +82,59 @@ img {
 .navbar {
     background-color: #666600;
 }
-.navbar .nav-link{
+
+.navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffca;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-link:hover {
     color: white;
 }
 
 @media (min-width: 992px) {
-    .navbar{
+    .navbar {
         min-height: 100vh;
         width: 240px;
-        background: linear-gradient(rgba(102, 102, 0, 0.4),rgba(102, 102, 0, 0.8)) , url(../img/bi.png);
+        background: linear-gradient(rgba(102, 102, 0, 0.4), rgba(102, 102, 0, 0.8)), url(../img/bi.png);
         background-position: center;
     }
 
-    .navbar-brand img{
+    .navbar-brand img {
         border: 6px solid rgba(255, 255, 202, 0.4);
 
     }
 
-    #content-wrapper{
+    #content-wrapper {
         padding-left: 240px;
     }
 
+}
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: #ffffca;
+    border-color: #ffffca;
+    color: #666600;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: #ffff84;
+    color: #666600;
+    border-color: #ffff84;
 }
 
 .press {
     position: relative;
 }
 
-.press::after{
+.press::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -119,17 +145,37 @@ img {
     transition: all 0.4s;
 }
 
-.press:hover::after{
+.press:hover::after {
     width: 100%;
 }
 
-/*:root {
-    --color-body: #aaaa68;
-    --color-heading: #ffffac;
-    --color-base: #666600;
-    --color-base2: #5f5f00;
-    --color-brand: #ffffca;
-    --color-brand2: #ffff84;
-    --sidbar-width: #240px;
-    --font-base: "Roboto Mono";
-}*/
+#contact .form-control {
+    background-color: #666600;
+    border-color: #666600;
+    color: #aaaa68;
+
+}
+
+#contact .form-control:focus {
+    border-color: #ffffca;
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: #aaaa68;
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+.socials a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #666600;
+    border-radius: 100px;
+}
