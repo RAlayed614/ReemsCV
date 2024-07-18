@@ -14,9 +14,12 @@ body {
     font-family: "Roboto Mono", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
     color: #ffffac;
     font-weight: 600;
+}
+h4, h5, h6{
+    color: #ffffac;
 }
 
 a {
@@ -43,6 +46,32 @@ img {
     padding-bottom: 80px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
+
+.text-brand {
+    color: #ffff84;
+}
+.bg-base {
+    background-color: #666600;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 #ffff84;
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: #ffff84;
+    color: #666600;
+}
+
 .navbar {
     background-color: #666600;
 }
